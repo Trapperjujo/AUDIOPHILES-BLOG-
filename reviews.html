@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Culture Quarterly | Music Production Blog</title>
-    <meta name="description" content="The premier source for beatmakers and producers. Discover the best free VST plugins, mixing guides, and production setups.">
+    <title>VST Plugin Reviews | Audio Culture Quarterly</title>
+    <meta name="description" content="Read in-depth reviews of the latest and greatest free VST plugins, synthesizers, and audio effects.">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <style>
@@ -108,6 +108,15 @@
         .article-card:hover .read-more {
             color: var(--accent-blue);
         }
+        
+        .score-badge {
+            background: var(--accent-glow);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 900;
+            margin-left: auto;
+        }
     </style>
 </head>
 <body class="dark-theme">
@@ -125,66 +134,62 @@
     
     <header class="hero" style="margin-top: 150px; margin-bottom: 60px;">
         <div class="hero-content">
-            <h1 style="font-size: 3.5rem;">Latest Articles</h1>
-            <p class="subtitle">Actionable guides and tier-lists for the modern beatmaker.</p>
+            <span class="badge">Gear & Software</span>
+            <h1 style="font-size: 3.5rem;">VST Plugin Reviews</h1>
+            <p class="subtitle">Honest, in-depth reviews of the latest free tools for modern beatmakers.</p>
         </div>
     </header>
 
     <main>
         <div class="grid-container">
 
-            <!-- Week 4 Post (The Pillar) -->
-            <a href="post-best-free-vst-plugins.html" class="article-card">
-                <img src="./assets/hero.png" alt="DAW Studio">
-                <div class="article-body">
-                    <span class="article-cat">Production Guide</span>
-                    <h2 class="article-title">BEST FREE VST PLUGINS 2026 (The Essential List)</h2>
-                    <p class="article-excerpt">Stop throwing your rent money at massive plugin bundles. Discover the absolute best free VST3 plugins of 2026 for synths, mixing, and effects.</p>
-                    <div class="article-footer">
-                        <span>5 min read</span>
-                        <span class="read-more">Read Article &rarr;</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Week 3 Post -->
-            <a href="post-master-for-free.html" class="article-card">
-                <div class="article-img-placeholder">🎚️</div>
-                <div class="article-body">
-                    <span class="article-cat">Mixing & Dynamics</span>
-                    <h2 class="article-title">How to Master a Track for Free Using VST3 Plugins</h2>
-                    <p class="article-excerpt">A comprehensive, step-by-step unlisted guide to mastering your music using 100% free digital signal processing tools.</p>
-                    <div class="article-footer">
-                        <span>4 min read</span>
-                        <span class="read-more">Read Article &rarr;</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Week 2 Post -->
-            <a href="post-rc20-alternatives.html" class="article-card">
-                <img src="./assets/lofi.png" alt="Lo-fi tape deck">
-                <div class="article-body">
-                    <span class="article-cat">Creative Effects & Lo-Fi</span>
-                    <h2 class="article-title">Best Free Alternatives to RC-20 Retro Color for Lofi Beats</h2>
-                    <p class="article-excerpt">Achieve the perfect analog warmth, flutter, and degraded texture for zero cost using Chow Tape Model and more.</p>
-                    <div class="article-footer">
-                        <span>3 min read</span>
-                        <span class="read-more">Read Article &rarr;</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Week 1 Post -->
-            <a href="post-free-vst3-synths.html" class="article-card">
+            <!-- Review 1: Vital -->
+            <a href="review-vital-synth.html" class="article-card">
                 <img src="./assets/synth.png" alt="Synthesizer">
                 <div class="article-body">
-                    <span class="article-cat">Free Synthesizers & Design</span>
-                    <h2 class="article-title">The Ultimate Guide to Free VST3 Synthesizers in 2026</h2>
-                    <p class="article-excerpt">Level up your sound design arsenal without spending a dime. We compare the heavyweights like Vital and Surge XT.</p>
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span class="article-cat" style="margin-bottom: 0;">Synthesizers</span>
+                        <span class="score-badge">9.8/10</span>
+                    </div>
+                    <h2 class="article-title">Vital Synth Review: The Undisputed Free Wavetable King</h2>
+                    <p class="article-excerpt">We dive deep into Vital's spectral warping, drag-and-drop modulation, and text-to-wavetable capabilities to see if it really beats Serum.</p>
                     <div class="article-footer">
-                        <span>6 min read</span>
-                        <span class="read-more">Read Article &rarr;</span>
+                        <span>Reviewed by ACQ Editorial</span>
+                        <span class="read-more">Read Review &rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Review 2: Chow Tape Model -->
+            <a href="review-chow-tape.html" class="article-card">
+                <img src="./assets/lofi.png" alt="Lo-Fi Studio">
+                <div class="article-body">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span class="article-cat" style="margin-bottom: 0;">Effects & Lo-Fi</span>
+                        <span class="score-badge">9.5/10</span>
+                    </div>
+                    <h2 class="article-title">Chow Tape Model Review: The Best Free Tape Emulation?</h2>
+                    <p class="article-excerpt">Originating as a university modeling project, Chow Tape brings authentic Wow, Flutter, and degradation. Here is how it sounds on a mix bus.</p>
+                    <div class="article-footer">
+                        <span>Reviewed by ACQ Editorial</span>
+                        <span class="read-more">Read Review &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            
+             <!-- Review 3: TDR Nova -->
+            <a href="review-tdr-nova.html" class="article-card">
+                <div class="article-img-placeholder">🎚️</div>
+                <div class="article-body">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <span class="article-cat" style="margin-bottom: 0;">Mixing & Mastering</span>
+                        <span class="score-badge">9.2/10</span>
+                    </div>
+                    <h2 class="article-title">TDR Nova Review: Surgical Free Dynamic EQ</h2>
+                    <p class="article-excerpt">Why this transparent parallel dynamic equalizer needs to be on every single master channel, and how to use it to tame harsh hi-hats.</p>
+                    <div class="article-footer">
+                        <span>Reviewed by ACQ Editorial</span>
+                        <span class="read-more">Read Review &rarr;</span>
                     </div>
                 </div>
             </a>
