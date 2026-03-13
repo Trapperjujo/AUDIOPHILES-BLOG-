@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Newsletter | Audio Culture Quarterly</title>
+    <meta name="description" content="Subscribe to the Audio Culture Quarterly newsletter for weekly free VSTs, mixing tips, and production guides.">
+    <meta name="keywords" content="audiophile, vst, plugins, mixing, mastering, DAW, studio, beat, beatmaker">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .newsletter-container {
+            max-width: 600px;
+            margin: 150px auto 100px;
+            padding: 3rem;
+            background: var(--bg-surface);
+            border: 1px solid hsla(0,0%,100%,0.05);
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+
+        .newsletter-container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .newsletter-container p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .newsletter-input {
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid hsla(0,0%,100%,0.1);
+            background: hsla(0,0%,0%,0.3);
+            color: white;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .newsletter-input:focus {
+            border-color: var(--accent-blue);
+        }
+
+        .btn-submit {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-glow));
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px hsla(190, 80%, 55%, 0.3);
+        }
+
+        .success-message {
+            display: none;
+            background: hsla(140, 80%, 40%, 0.2);
+            color: #4ade80;
+            padding: 1.5rem;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid hsla(140, 80%, 40%, 0.3);
+            margin-top: 2rem;
+            font-weight: 500;
+        }
+
+        .disclaimer {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: hsla(0,0%,100%,0.4);
+        }
+        
+        .disclaimer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AUDIO CULTURE <span>QUARTERLY</span></a>
+            <div class="nav-links">
+                <a href="index.html">Articles</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="downloads.html">Free Downloads</a>
+            </div>
+            <a href="newsletter.html" class="cta-button">Join Newsletter</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="newsletter-container">
+            <span class="badge">Weekly Drop</span>
+            <h1>Join The Insider List</h1>
+            <p>Get the absolute best free VST plugins, mixing techniques, and studio gear reviews delivered directly to your inbox every Thursday. No spam, just pure production value.</p>
+            
+            <form id="subscribeForm" class="newsletter-form">
+                <input type="email" id="emailInput" class="newsletter-input" placeholder="Enter your best email address" required>
+                <button type="submit" class="btn-submit">Subscribe Now & Get Free 2026 Blueprint</button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+                🎉 Success! You've been added to the list. Check your inbox to download your Free Plugin Integration Blueprint.
+            </div>
+
+            <p class="disclaimer">By subscribing, you agree to our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>. You can unsubscribe at any time.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Audio Culture Quarterly. All Rights Reserved.</p>
+            <div class="footer-links" style="margin-top: 1rem;">
+                <a href="privacy.html" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">Privacy Policy & Cookies</a>
+                <a href="terms.html" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('emailInput').value;
+            
+            if(email) {
+                // Simulate API call/processing
+                this.style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
