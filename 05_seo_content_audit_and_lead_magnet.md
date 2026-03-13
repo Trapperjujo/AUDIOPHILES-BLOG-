@@ -19,6 +19,7 @@ Assuming existing blog posts, link these phrases in the draft:
 5. "VST plugins" -> Link to: *[How to Organize Your VST Plugin Folder]*
 
 ### Keyword Optimization
+**Target Global SEO Keywords:** audiophile, vst, plugins, mixing, mastering, DAW, studio, beat, beatmaker
 **Keyword Stuffing Check:** "free VST plugins" could get repetitive. 
 **Suggested Synonyms to sprinkle in:** *freeware audio tools*, *zero-cost virtual instruments*, *gratis studio plugins*, *free production software*, *budget-friendly audio effects*.
 
