@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Downloads | Audio Culture Quarterly</title>
+    <meta name="description" content="Download exclusive free VST plugin blueprints, cheat sheets, and templates for beatmakers and producers.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .download-card {
+            background: var(--bg-surface);
+            border: 1px solid hsla(0,0%,100%,0.05);
+            border-radius: var(--border-radius-md);
+            padding: 2.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .download-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient-brand);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .download-card:hover {
+            transform: translateY(-5px);
+            border-color: hsla(190, 80%, 55%, 0.3);
+        }
+        .download-card:hover::before {
+            opacity: 1;
+        }
+        .download-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .download-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+        .download-card p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .download-btn {
+            display: inline-block;
+            background: var(--gradient-brand);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px hsla(270,80%,60%,0.3);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">AUDIO CULTURE <span>QUARTERLY</span></a>
+            <div class="nav-links">
+                <a href="#">Reviews</a>
+                <a href="#">Guides</a>
+                <a href="downloads.html" style="color: var(--accent-blue);">Free Downloads</a>
+            </div>
+            <a href="#" class="cta-button">Join Newsletter</a>
+        </div>
+    </nav>
+    
+    <header class="hero" style="margin-top: 150px; margin-bottom: 20px;">
+        <div class="hero-content">
+            <span class="badge">Resources</span>
+            <h1 style="font-size: 3.5rem;">The Produce-for-Free Vault</h1>
+            <p class="subtitle">Exclusive cheat sheets, templates, and plugin blueprints to level up your workflow.</p>
+        </div>
+    </header>
+
+    <main class="post-content" style="max-width: 1000px;">
+        <article>
+            <div class="downloads-grid">
+                
+                <!-- Lead Magnet 1 -->
+                <div class="download-card">
+                    <span class="download-icon">📘</span>
+                    <h3>The 2026 Ultimate Free Plugin Blueprint</h3>
+                    <p>A 3-page clickable PDF directory linking to the top 20 most essential free synths and effects, categorized by use-case. Plus, our secret Free Vocal Chain diagram.</p>
+                    <a href="#" class="download-btn">Download PDF File</a>
+                </div>
+
+                <!-- Ideas for additional downloads based on strategy -->
+                <div class="download-card">
+                    <span class="download-icon">🎛️</span>
+                    <h3>Ableton Free Plugins Starter Rack</h3>
+                    <p>Our custom curated Ableton Live project template pre-routed with the best free VST3 mixing plugins (TDR Nova, Analog Obsession).</p>
+                    <a href="#" class="download-btn">Download .ALS Template</a>
+                </div>
+
+                <div class="download-card">
+                    <span class="download-icon">🎹</span>
+                    <h3>FL Studio 808 Mixing Cheat Sheet</h3>
+                    <p>A quick-reference guide on how to sidechain, saturate, and parallel compress your 808s using exclusively 100% free VST3 plugins.</p>
+                    <a href="#" class="download-btn">Download Cheat Sheet</a>
+                </div>
+
+            </div>
+
+            <div class="glow-box" style="margin-top: 5rem;">
+                <h2>Unlock the Secret Vault</h2>
+                <p>Join 15,000+ other producers on our newsletter to receive a brand new free aesthetic sample pack every single Friday.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary">Join Unlocked Newsletter (Free)</a>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Audio Culture Quarterly. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
